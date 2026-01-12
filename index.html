@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>John Eros Tibayan | Aspiring Web Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Portfolio<span>.</span></div>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span>John Eros Tibayan</span></h1>
+      <h2>Aspiring Web Developer</h2>
+
+      <p>
+        Aspiring IT professional eager to develop practical experience, contribute to innovative solutions, and continuously expand technical knowledge in the field of information technology.
+      </p>
+
+      <div class="buttons">
+        <a href="resume.pdf" class="btn primary" download="John_Eros_Tibayan_Resume.pdf" id="downloadBtn">
+          Download CV
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="eros.png" alt="John Eros Tibayan">
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="skills" id="skills">
+    <h2 class="skills-title">SKILLS</h2>
+
+    <div class="skills-box">  
+      <div class="skills-grid">
+        <div class="skill-item">
+          <img src="html.png" alt="HTML">
+        </div>
+        <div class="skill-item">
+          <img src="js.png" alt="JavaScript">
+        </div>
+        <div class="skill-item">
+          <img src="mysql.png" alt="MySQL">
+        </div>
+        <div class="skill-item">
+          <img src="css.png" alt="CSS">
+        </div>
+        <div class="skill-item">
+          <img src="php.png" alt="PHP">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="projects" id="projects">
+    <h2 class="projects-title">PROJECTS</h2>
+    
+    <div class="projects-container">
+      <div class="project-card">
+        <div class="project-header">
+          <h3>CAPSTONE PROJECT</h3>
+          
+        </div>
+        
+        <p class="project-description">
+          This system converts student records into a digital format and systematically arranges them for the Registrar’s Office, enhancing the speed, protection, and ease of access to academic documents.
+        </p>
+        
+        <div class="project-preview">
+          <img src="login.png" alt="Login Screen" class="project-image" id="main-project-image">
+        </div>
+        
+        <button class="review-btn" onclick="openSlider()">Review Project</button>
+      </div>
+      
+      
+    </div>
+  </section>
+
+  <div class="slider-modal" id="sliderModal">
+    <div class="slider-content">
+      <span class="close-btn" onclick="closeSlider()">&times;</span>
+      
+      <div class="slider-container">
+        <img src="login.png" alt="Project Image" class="slider-image active" id="slide1">
+        <img src="dashboard.png" alt="Project Image" class="slider-image active" id="slide2">
+        <img src="user.png" alt="Project Image" class="slider-image active" id="slide3">
+        <img src="list.png" alt="Project Image" class="slider-image active" id="slide4">
+        <img src="upload.png" alt="Project Image" class="slider-image active" id="slide5">
+        <img src="archives.png" alt="Project Image" class="slider-image active" id="slide6">
+        <img src="checklist.png" alt="Project Image" class="slider-image active" id="slide7">
+        <img src="history.png" alt="Project Image" class="slider-image active" id="slide8">
+        <img src="report.png" alt="Project Image" class="slider-image active" id="slide9">
+    
+      </div>
+      
+      <div class="slider-controls">
+        <button class="prev-btn" onclick="changeSlide(-1)">❮</button>
+        <div class="slide-indicators">
+          <span class="indicator active" onclick="goToSlide(0)"></span>
+          
+          <span class="indicator" onclick="goToSlide(1)"></span>
+          <span class="indicator" onclick="goToSlide(2)"></span>
+          <span class="indicator" onclick="goToSlide(3)"></span>
+          <span class="indicator" onclick="goToSlide(4)"></span>
+          <span class="indicator" onclick="goToSlide(5)"></span>
+          <span class="indicator" onclick="goToSlide(6)"></span>
+          <span class="indicator" onclick="goToSlide(7)"></span>
+          <span class="indicator" onclick="goToSlide(8)"></span>
+          <span class="indicator" onclick="goToSlide(9)"></span>
+        </div>
+        <button class="next-btn" onclick="changeSlide(1)">❯</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <h2 class="contact-title">CONTACTS</h2>
+
+    <p><strong>EMAIL:</strong> johnerostibayan1@gmail.com</p>
+    <p><strong>CONTACT NUMBER:</strong> +63 960 652 1730</p>
+
+    <div class="contact-icons">
+      <a href="https://www.facebook.com/Erostibayan" target="_blank">
+        <img src="fb.png" alt="Facebook">
+      </a>
+
+      <a href="mailto:johnerostibayan1@gmail.com">
+        <img src="gmail.png" alt="Gmail">
+      </a>
+
+      <a href="https://github.com/johnerostibayan1-dotcom" target="_blank">
+        <img src="github.png" alt="GitHub">
+      </a>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
